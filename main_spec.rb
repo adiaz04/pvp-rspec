@@ -16,7 +16,7 @@ describe 'main' do
     }
 
     # act
-    match.setup(**attributes)
+    match = Match.new(**attributes)
 
     # assert
     expect(match.players).to eq([player1, player2])
